@@ -6,81 +6,113 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #0b1220;
             color: #e5e7eb;
         }
+
         header {
-            background: linear-gradient(90deg, #22c55e, #16a34a);
-            padding: 25px;
+            background-color: #020617;
+            padding: 30px;
             text-align: center;
+            border-bottom: 1px solid #1e293b;
         }
+
         header h1 {
             margin: 0;
-            font-size: 36px;
-            color: #fff;
+            font-size: 34px;
+            letter-spacing: 1px;
         }
+
         header a {
-            color: #fff;
-            font-weight: bold;
+            color: #22c55e;
             text-decoration: none;
+            font-weight: 600;
         }
+
         section {
-            padding: 40px 20px;
             max-width: 1100px;
             margin: auto;
+            padding: 50px 20px;
         }
+
         h2 {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             color: #22c55e;
         }
+
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
         }
+
         .card {
-            background: #1e293b;
+            background-color: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 10px;
             padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(0,0,0,0.4);
         }
+
         .card h3 {
             margin-top: 0;
             color: #38bdf8;
         }
+
         .price {
-            font-size: 26px;
+            font-size: 24px;
             margin: 15px 0;
             color: #22c55e;
-        }
-        .button {
-            display: inline-block;
-            padding: 12px 20px;
-            background: #22c55e;
-            color: #000;
-            border-radius: 8px;
-            text-decoration: none;
             font-weight: bold;
         }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        ul li::before {
+            content: "▸ ";
+            color: #22c55e;
+        }
+
+        .button {
+            display: block;
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #22c55e;
+            color: #020617;
+            text-align: center;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
         .button:hover {
-            background: #16a34a;
+            background-color: #16a34a;
         }
+
         .info {
-            background: #020617;
+            background-color: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 10px;
             padding: 25px;
-            border-radius: 12px;
-            line-height: 1.6;
+            line-height: 1.7;
+            font-size: 15px;
         }
+
         footer {
-            background: #020617;
+            background-color: #020617;
+            border-top: 1px solid #1e293b;
             text-align: center;
             padding: 20px;
             font-size: 14px;
             color: #94a3b8;
         }
+
         footer a {
             color: #22c55e;
             text-decoration: none;
@@ -90,91 +122,134 @@
 <body>
 
 <header>
-    <h1>🌾 FarmSucht Shop</h1>
-    <p>Kaufen nur über Discord: 
+    <h1>FarmSucht Shop</h1>
+    <p>Kauf nur über Discord: 
         <a href="https://dsc.gg/farmsucht" target="_blank">dsc.gg/farmsucht</a>
     </p>
 </header>
 
 <section>
-    <h2>👑 Ränge</h2>
+    <h2>Ränge</h2>
     <div class="grid">
+
         <div class="card">
             <h3>Bauer Rang</h3>
             <p class="price">15 €</p>
+            <ul>
+                <li>4 Homes verfügbar</li>
+                <li>2 Swarps verfügbar</li>
+                <li>2 Plots verfügbar</li>
+                <li>Rechte auf /wb</li>
+            </ul>
             <a class="button" href="https://dsc.gg/farmsucht" target="_blank">Über Discord kaufen</a>
         </div>
+
         <div class="card">
             <h3>Landlord Rang</h3>
             <p class="price">25 €</p>
+            <ul>
+                <li>6 Homes verfügbar</li>
+                <li>3 Swarps verfügbar</li>
+                <li>4 Plots verfügbar</li>
+                <li>Rechte auf /wb</li>
+            </ul>
             <a class="button" href="https://dsc.gg/farmsucht" target="_blank">Über Discord kaufen</a>
         </div>
+
         <div class="card">
             <h3>Diamant Rang</h3>
             <p class="price">35 €</p>
+            <ul>
+                <li>8 Homes verfügbar</li>
+                <li>4 Swarps verfügbar</li>
+                <li>6 Plots verfügbar</li>
+                <li>Rechte auf /wb</li>
+                <li>Rechte auf /feed (alle 10 Minuten)</li>
+            </ul>
             <a class="button" href="https://dsc.gg/farmsucht" target="_blank">Über Discord kaufen</a>
         </div>
+
         <div class="card">
             <h3>Mythic Rang</h3>
             <p class="price">50 €</p>
+            <ul>
+                <li>10 Homes verfügbar</li>
+                <li>5 Swarps verfügbar</li>
+                <li>10 Plots verfügbar</li>
+                <li>Rechte auf /wb</li>
+                <li>Rechte auf /fly</li>
+                <li>Rechte auf /feed (alle 5 Minuten)</li>
+                <li>Rechte auf /heal (alle 10 Minuten)</li>
+            </ul>
             <a class="button" href="https://dsc.gg/farmsucht" target="_blank">Über Discord kaufen</a>
         </div>
+
     </div>
 </section>
 
 <section>
-    <h2>❄️ Winterkisten</h2>
+    <h2>Winterkisten</h2>
     <div class="grid">
+
         <div class="card">
             <h3>1 Winterkiste</h3>
             <p class="price">2 €</p>
             <a class="button" href="https://dsc.gg/farmsucht" target="_blank">Jetzt kaufen</a>
         </div>
+
         <div class="card">
             <h3>3 Winterkisten</h3>
             <p class="price">5 €</p>
             <a class="button" href="https://dsc.gg/farmsucht" target="_blank">Jetzt kaufen</a>
         </div>
+
         <div class="card">
             <h3>5 Winterkisten</h3>
             <p class="price">8 €</p>
-            <a class="button" href="https://dsc.gg/farmsucht" target="_blank">🔥 Bestseller</a>
+            <a class="button" href="https://dsc.gg/farmsucht" target="_blank">Jetzt kaufen</a>
         </div>
+
         <div class="card">
             <h3>10 Winterkisten</h3>
             <p class="price">15 €</p>
-            <a class="button" href="https://dsc.gg/farmsucht" target="_blank">💎 Angebot</a>
+            <a class="button" href="https://dsc.gg/farmsucht" target="_blank">Angebot</a>
         </div>
+
     </div>
 </section>
 
 <section>
-    <h2>ℹ️ Wichtige Informationen</h2>
+    <h2>Wichtige Hinweise</h2>
     <div class="info">
         <p><strong>Kaufabwicklung:</strong><br>
-        Der Kauf erfolgt ausschließlich über Discord.<br>
-        Bitte erstelle ein Ticket oder schreibe mich privat an:<br>
+        Alle Käufe erfolgen ausschließlich über Discord.<br>
+        Bitte erstelle ein Ticket oder schreibe privat:<br>
         <strong>Discord: zaa_ay</strong></p>
 
-        <p><strong>Zahlungsmethoden:</strong><br>
-        ✔️ PayPal<br>
-        ✔️ Paysafecard</p>
+        <p><strong>Zahlungsmethode:</strong><br>
+        Paysafecard</p>
+
+        <p><strong>Winterkisten (Case Opening):</strong><br>
+        Winterkisten basieren auf einem Zufallsprinzip.<br>
+        Es ist möglich, sowohl gute als auch weniger gute Items zu erhalten.<br>
+        Es besteht kein Anspruch auf bestimmte Items.</p>
 
         <p><strong>Rückerstattung:</strong><br>
-        ❗ Es gibt <strong>keine Rückerstattung</strong> nach dem Kauf.</p>
+        Nach dem Kauf ist keine Rückerstattung möglich.</p>
 
         <p><strong>Server-Unterstützung:</strong><br>
-        Das Geld wird vollständig in den FarmSucht Server investiert.</p>
+        Alle Einnahmen werden direkt in den FarmSucht Server investiert.</p>
     </div>
 </section>
 
 <section>
-    <h2>📄 Impressum</h2>
+    <h2>Impressum</h2>
     <div class="info">
         <p><strong>FarmSucht Minecraft Server</strong></p>
         <p>Inhaber: zaa_ay</p>
-        <p>Kontakt: Über Discord – <a href="https://dsc.gg/farmsucht" target="_blank">dsc.gg/farmsucht</a></p>
-        <p>Dies ist ein privates Projekt. Alle Käufe sind digitale Inhalte.</p>
+        <p>Kontakt ausschließlich über Discord:<br>
+        <a href="https://dsc.gg/farmsucht" target="_blank">dsc.gg/farmsucht</a></p>
+        <p>Digitale Inhalte – kein Widerrufsrecht.</p>
     </div>
 </section>
 
